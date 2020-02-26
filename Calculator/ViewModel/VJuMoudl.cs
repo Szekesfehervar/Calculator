@@ -23,11 +23,7 @@ namespace Calculator.ViewModel
 
         public VjuMoudl()
         {
-            Number = new ParametrizedRelayCommand(
-                (param) =>
 
-
-                );
         }
 
 
