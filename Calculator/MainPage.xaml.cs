@@ -25,8 +25,6 @@ namespace Calculator
         string input = string.Empty;
         string x = string.Empty;
         string y = string.Empty;
-        char operation;
-        double result = 0.0;
 
         public MainPage()
         {
@@ -101,6 +99,11 @@ namespace Calculator
 
         }
 
-
+        private void butcarka_Click(object sender, RoutedEventArgs e)
+        {
+            this.textbox.Text = " ";
+            input += ".";
+            this.textbox.Text += input;
+        }
     }
 }

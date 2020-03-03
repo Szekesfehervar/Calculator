@@ -54,9 +54,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Numberbatny-->
-        <Button Content="+/-"   x:Name="but+"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="+/-"   x:Name="butplus"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
         <Button Content="0"     x:Name="but0"   Grid.Column="1" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content=","     x:Name="but,"   Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content=","     x:Name="butcarka"   Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="butcarka_Click"/>
         <Button Content="1"     x:Name="but1"   Grid.Column="0" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but1_Click"/>
         <Button Content="2"     x:Name="but2"  Grid.Column="1" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but2_Click"/>
         <Button Content="3"     x:Name="but3"   Grid.Column="2" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but3_Click"/>
