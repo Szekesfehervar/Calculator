@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     xmlns:viewmodel="using:Calculator.ViewModel"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+
     <Page.DataContext>
         <viewmodel:VjuMoudl/>
     </Page.DataContext>
@@ -20,7 +20,7 @@
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="VerticalAlignment" Value="Stretch"/>
         </Style>
-        
+
         <Style x:Key="Jezismarja" TargetType="Button" BasedOn="{StaticResource BasicStyle}">
             <Setter Property="Background" Value="DeepPink"/>
         </Style>
@@ -34,8 +34,8 @@
             <Setter Property="Background" Value="Violet"/>
 
         </Style>
-    </Page.Resources> 
-    
+    </Page.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -54,21 +54,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Numberbatny-->
-        <Button Content="+/-"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="0"     Grid.Column="1" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content=","     Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="1"     Grid.Column="0" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="2"     Grid.Column="1" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="3"     Grid.Column="2" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="4"     Grid.Column="0" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="5"     Grid.Column="1" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="6"     Grid.Column="2" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="7"     Grid.Column="0" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="8"     Grid.Column="1" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="9"     Grid.Column="2" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="+/-"   x:Name="but+"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="0"     x:Name="but0"   Grid.Column="1" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content=","     x:Name="but,"   Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="1"     x:Name="but1"   Grid.Column="0" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but1_Click"/>
+        <Button Content="2"     x:Name="but2"  Grid.Column="1" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but2_Click"/>
+        <Button Content="3"     x:Name="but3"   Grid.Column="2" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but3_Click"/>
+        <Button Content="4"     x:Name="but4"   Grid.Column="0" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but4_Click"/>
+        <Button Content="5"     x:Name="but5"   Grid.Column="1" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but5_Click"/>
+        <Button Content="6"     x:Name="but6"   Grid.Column="2" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but6_Click"/>
+        <Button Content="7"     x:Name="but7"   Grid.Column="0" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but7_Click"/>
+        <Button Content="8"     x:Name="but8"   Grid.Column="1" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but8_Click"/>
+        <Button Content="9"     x:Name="but9"   Grid.Column="2" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but9_Click"/>
 
         <!--Tamtobatny-->
-        
+
         <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
         <Button Content="+"     Grid.Column="3" Grid.Row="1" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
         <Button Content="-"     Grid.Column="3" Grid.Row="2" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
@@ -76,8 +76,8 @@
         <Button Content="/"     Grid.Column="3" Grid.Row="4" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
 
         <Button Content="Reset" Grid.Column="3" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
-        
-        
+
+
         <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
 
         <Button Content="fce"   Grid.Column="4" Grid.Row="1" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
@@ -86,7 +86,8 @@
         <Button Content="fce"   Grid.Column="4" Grid.Row="4" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
 
         <Button Content="="     Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
-        
-        
+        <TextBox   x:Name="textbox" Text="TextBox" TextWrapping="Wrap" Grid.ColumnSpan="3" Margin="10,0,0,0"/>
+
+
     </Grid>
 </Page>
