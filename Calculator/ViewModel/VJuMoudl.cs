@@ -33,7 +33,7 @@ namespace Calculator.ViewModel
             Point = new RelayCommand(
                 () =>
                 {
-                    if ((Text.Contains(".")) && Text.Length > 0)
+                    if (!(Text.Contains(".")) && Text.Length > 0)
                     {
                         Text += ".";
                     }
@@ -43,10 +43,7 @@ namespace Calculator.ViewModel
             Sign = new RelayCommand(
                 () =>
                 {
-                    if (Text.StartsWith("-"))
-                        Text = Text.Substring(1, Text.Length - 1);
-                    else
-                        Text = "-" + Text;
+                    Text = Convert.ToString((Convert.ToDouble(Text) + (-1)));
                 }
                 );
 
@@ -95,6 +92,7 @@ namespace Calculator.ViewModel
             Function = new ParametrizedRelayCommand(
                 (param) =>
                 {
+                    _storedValue = Text;
                     if (Convert.ToString(param) == "sin")
                     {
                         _func = 1;
@@ -120,23 +118,20 @@ namespace Calculator.ViewModel
                     if(_oper == 1)
                     {
                         Text = Convert.ToString(Convert.ToDouble(_storedValue) + Convert.ToDouble(Text));
-                        _oper = 0;
                     }
                     if(_oper == 2)
                     {
                         Text = Convert.ToString(Convert.ToDouble(_storedValue) - Convert.ToDouble(Text));
-                        _oper = 0;
                     }
                     if(_oper == 3)
                     {
                         Text = Convert.ToString(Convert.ToDouble(_storedValue) * Convert.ToDouble(Text));
-                        _oper = 0;
                     }
                     if(_oper == 4)
                     {
                         if (Text == "0")
                         {
-                            Text = "Nulou ne, takhle to nefunguje kamo bracho";
+                            Text = "Nulou ne, takhle to nefunguje";
                         }
                         else
                         {
