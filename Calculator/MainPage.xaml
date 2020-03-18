@@ -54,39 +54,39 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Numberbatny-->
-        <Button Content="+/-"   x:Name="butplus"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="0"     x:Name="but0"   Grid.Column="1" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content=","     x:Name="butcarka"   Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="butcarka_Click"/>
-        <Button Content="1"     x:Name="but1"   Grid.Column="0" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but1_Click"/>
-        <Button Content="2"     x:Name="but2"  Grid.Column="1" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but2_Click"/>
-        <Button Content="3"     x:Name="but3"   Grid.Column="2" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but3_Click"/>
-        <Button Content="4"     x:Name="but4"   Grid.Column="0" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but4_Click"/>
-        <Button Content="5"     x:Name="but5"   Grid.Column="1" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but5_Click"/>
-        <Button Content="6"     x:Name="but6"   Grid.Column="2" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but6_Click"/>
-        <Button Content="7"     x:Name="but7"   Grid.Column="0" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but7_Click"/>
-        <Button Content="8"     x:Name="but8"   Grid.Column="1" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but8_Click"/>
-        <Button Content="9"     x:Name="but9"   Grid.Column="2" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" Click="but9_Click"/>
+        <Button Content="+/-"   x:Name="butplus"   Grid.Column="0" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="+/-"/>
+        <Button Content="0"     x:Name="but0"   Grid.Column="1" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="0"/>
+        <Button Content=","     x:Name="butcarka"   Grid.Column="2" Grid.Row="4" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="," />
+        <Button Content="1"     x:Name="but1"   Grid.Column="0" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="1" />
+        <Button Content="2"     x:Name="but2"  Grid.Column="1" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="2" />
+        <Button Content="3"     x:Name="but3"   Grid.Column="2" Grid.Row="3" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="3" />
+        <Button Content="4"     x:Name="but4"   Grid.Column="0" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="4" />
+        <Button Content="5"     x:Name="but5"   Grid.Column="1" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="5"/>
+        <Button Content="6"     x:Name="but6"   Grid.Column="2" Grid.Row="2" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="6"/>
+        <Button Content="7"     x:Name="but7"   Grid.Column="0" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="7"/>
+        <Button Content="8"     x:Name="but8"   Grid.Column="1" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="8"/>
+        <Button Content="9"     x:Name="but9"   Grid.Column="2" Grid.Row="1" Style="{StaticResource NumberButton}" Command="{Binding Number}" CommandParameter="9"/>
 
         <!--Tamtobatny-->
 
-        <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="+"     Grid.Column="3" Grid.Row="1" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="-"     Grid.Column="3" Grid.Row="2" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="*"     Grid.Column="3" Grid.Row="3" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="/"     Grid.Column="3" Grid.Row="4" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Operation}" CommandParameter="C"/>
+        <Button Content="+"     Grid.Column="3" Grid.Row="1" Style="{StaticResource tamto}" Command="{Binding Operation}" CommandParameter="+"/>
+        <Button Content="-"     Grid.Column="3" Grid.Row="2" Style="{StaticResource tamto}" Command="{Binding Operation}" CommandParameter="-"/>
+        <Button Content="*"     Grid.Column="3" Grid.Row="3" Style="{StaticResource tamto}" Command="{Binding Operation}" CommandParameter="*"/>
+        <Button Content="/"     Grid.Column="3" Grid.Row="4" Style="{StaticResource tamto}" Command="{Binding Operation}" CommandParameter="/"/>
 
-        <Button Content="Reset" Grid.Column="3" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="Reset" Grid.Column="3" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Reset}" CommandParameter="Reset"/>
 
 
-        <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="C"     Grid.Column="4" Grid.Row="0" Style="{StaticResource tamto}" Command="{Binding Reset}" CommandParameter="C"/>
 
-        <Button Content="fce"   Grid.Column="4" Grid.Row="1" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="fce"   Grid.Column="4" Grid.Row="2" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="fce"   Grid.Column="4" Grid.Row="3" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
-        <Button Content="fce"   Grid.Column="4" Grid.Row="4" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
+        <Button Content="Sin"   Grid.Column="4" Grid.Row="1" Style="{StaticResource Jezismarja}" Command="{Binding Function}" CommandParameter="sin"/>
+        <Button Content="Cos"   Grid.Column="4" Grid.Row="2" Style="{StaticResource Jezismarja}" Command="{Binding Function}" CommandParameter="cos"/>
+        <Button Content="Tan"   Grid.Column="4" Grid.Row="3" Style="{StaticResource Jezismarja}" Command="{Binding Function}" CommandParameter="log"/>
+        <Button Content="na druhhou"   Grid.Column="4" Grid.Row="4" Style="{StaticResource Jezismarja}" Command="{Binding Function}" CommandParameter="moc"/>
 
-        <Button Content="="     Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5" Style="{StaticResource Jezismarja}" Command="{Binding Number}" CommandParameter="1"/>
-        <TextBox   x:Name="textbox" Text="TextBox" TextWrapping="Wrap" Grid.ColumnSpan="3" Margin="10,0,0,0"/>
+        <Button Content="="     Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5" Style="{StaticResource Jezismarja}" Command="{Binding Result}" CommandParameter="="/>
+        <TextBox  Text="{Binding Text}" TextWrapping="Wrap" Grid.ColumnSpan="3" Margin="10,0,0,0"/>
 
 
     </Grid>

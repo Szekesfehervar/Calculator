@@ -22,88 +22,94 @@ namespace Calculator
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        string input = string.Empty;
-        string x = string.Empty;
-        string y = string.Empty;
+        //string input = string.Empty;
+        //string x = string.Empty;
+        //string y = string.Empty;
 
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private void but1_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "1";
-            this.textbox.Text += input;
-        }
+        //    private void but1_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "1";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but2_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "2";
-            this.textbox.Text += input;
-        }
+        //    private void but2_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "2";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but3_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "3";
-            this.textbox.Text += input;
-        }
+        //    private void but3_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "3";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but4_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "4";
-            this.textbox.Text += input;
-        }
+        //    private void but4_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "4";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but5_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "5";
-            this.textbox.Text += input;
-        }
+        //    private void but5_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "5";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but6_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "6";
-            this.textbox.Text += input;
-        }
+        //    private void but6_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "6";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but7_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "7";
-            this.textbox.Text += input;
-        }
+        //    private void but7_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "7";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but8_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "8";
-            this.textbox.Text += input;
-        }
+        //    private void but8_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "8";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void but9_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += "9";
-            this.textbox.Text += input;
-        }
+        //    private void but9_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += "9";
+        //        this.textbox.Text += input;
+        //    }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        //    private void Button_Click(object sender, RoutedEventArgs e)
+        //    {
 
-        }
+        //    }
 
-        private void butcarka_Click(object sender, RoutedEventArgs e)
-        {
-            this.textbox.Text = " ";
-            input += ".";
-            this.textbox.Text += input;
-        }
+        //    private void butcarka_Click(object sender, RoutedEventArgs e)
+        //    {
+        //        this.textbox.Text = " ";
+        //        input += ".";
+        //        this.textbox.Text += input;
+        //    }
+
+        //    private void Button_Click_1(object sender, RoutedEventArgs e)
+        //    {
+
+        //    }
+        //}
     }
 }
